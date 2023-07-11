@@ -1,0 +1,34 @@
+name: scribe
+version: 1.0.0
+
+authors:
+  - Edward Loveall <edward@edwardloveall.com>
+
+targets:
+  scribe:
+    main: src/scribe.cr
+
+crystal: 1.8.1
+
+dependencies:
+  lucky:
+    github: luckyframework/lucky
+    version: ~> 1.0.0
+  avram:
+    github: luckyframework/avram
+    version: ~> 1.0.0
+  authentic:
+    github: luckyframework/authentic
+    version: ~> 1.0.0
+  lucky_env:
+    github: luckyframework/lucky_env
+    version: ~> 0.1.4
+  lucky_task:
+    github: luckyframework/lucky_task
+    version: ~> 0.1.1
+  monads:
+    github: alex-lairan/monads
+development_dependencies:
+  lucky_flow:
+    github: luckyframework/lucky_flow
+    version: ~> 0.9.0
