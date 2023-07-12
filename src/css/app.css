@@ -1,0 +1,45 @@
+@import "~tufte-css/tufte.css";
+
+p.meta {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+pre {
+  background-color: rgba(127, 127, 127, 0.1);
+  margin-right: 1em;
+  padding: 1em;
+  padding-left: 2em;
+  overflow-x: scroll;
+}
+
+pre > code {
+  margin-left: 0;
+  width: 100%;
+}
+
+@media (max-width: 760px) {
+  pre {
+    margin-right: 0;
+  }
+}
+
+figure iframe {
+  max-width: 100%;
+}
+
+.highlight {
+  background: rgba(17, 17, 17, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  .highlight {
+    background: rgba(221, 221, 221, 0.3);
+  }
+}
+
+footer p span {
+  margin-right: 1em;
+}

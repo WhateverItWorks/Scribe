@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Exit if any subcommand fails
+set -e
+set -o pipefail
+
+echo "crystal spec --order random $@"
+crystal spec --order random $@

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Exit if any subcommand fails
+set -e
+set -o pipefail
+
+todays_date=$(date "+%Y-%m-%d")
+if ! git show HEAD:src/version.cr | rg -q $todays_date; then
+  echo "Date in committed src/version.cr is not today's date ($todays_date)"
+  echo "Make sure that the file is both up to date and commited to git."
+  echo
+  echo "## src/version.cr"
+  git show HEAD:src/version.cr
+  exit 1
+fi
+
+crystal build src/start_server.cr -o ubuntu_server --release --cross-compile --target "x86_64-pc-linux-gnu"

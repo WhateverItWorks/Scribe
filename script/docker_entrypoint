@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo -e "port: ${SCRIBE_PORT}\nhost: ${SCRIBE_HOST}" > ./config/watch.yml
+./start_server
