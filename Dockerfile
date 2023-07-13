@@ -9,7 +9,7 @@ COPY webpack.mix.js .
 COPY src ./src
 RUN yarn prod
 
-FROM crystallang/crystal:1.4.1-alpine as lucky_build
+FROM crystallang/crystal:1.9.0-alpine as lucky_build
 ENV SKIP_LUCKY_TASK_PRECOMPILATION="1"
 RUN apk add yaml-static
 WORKDIR /tmp_build
