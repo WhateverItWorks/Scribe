@@ -19,7 +19,7 @@
   "devDependencies": {
     "@babel/compat-data": "^7.9.0",
     "browser-sync": "^2.26.7",
-    "resolve-url-loader": "^3.1.1",
+    "resolve-url-loader": "^5.0.0",
     "sass": "^1.26.10",
     "sass-loader": "^13.0.0"
   }
