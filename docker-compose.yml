@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+    scribe:
+        build:
+          context: .
+          dockerfile: Dockerfile
+        container_name: scribe
+        hostname: scribe
+        user: 65534:65534
+        read_only: true
+        environment:
+            - APP_DOMAIN=https://changethis
+            - SCRIBE_HOST=0.0.0.0
+            - SCRIBE_PORT=8080
+            - SECRET_KEY_BASE=changethis
+            - GITHUB_PERSONAL_ACCESS_TOKEN=changethis
+            - GITHUB_USERNAME=changethis
+        ports:
+            - '127.0.0.1:8085:8080'
+        restart: always
+        security_opt:
+            - no-new-privileges:true
+        cap_drop:
+            - ALL
+        #volumes:
+            #- ./config/watch.yml:/app/config/watch.yml # optional
+        tty: true
+        stdin_open: true
