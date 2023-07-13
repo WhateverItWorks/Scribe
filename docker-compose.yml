@@ -27,3 +27,7 @@ services:
             #- ./config/watch.yml:/app/config/watch.yml # optional
         tty: true
         stdin_open: true
+        networks:
+            - scribe
+networks:
+  scribe:
