@@ -1,3 +1,3 @@
 module Scribe
-  VERSION = "2023-05-21"
+  VERSION = "2023-07-13"
 end
