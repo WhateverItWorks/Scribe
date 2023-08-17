@@ -1,3 +1,6 @@
+#### Mirror from source hut: https://sr.ht/~edwardloveall/Scribe/
+
+
 # Scribe - An Alternative Medium Frontend
 
 This is a project written using [Lucky](https://luckyframework.org). It's main website is [scribe.rip](https://scribe.rip).
