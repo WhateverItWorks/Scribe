@@ -1,4 +1,4 @@
-FROM node:20-alpine3.17 as node_build
+FROM node:21-alpine3.17 as node_build
 WORKDIR /tmp_build
 
 COPY package.json .
