@@ -48,7 +48,7 @@ jobs:
     - name: Install browser
       run: apt-get -yqq install chromium-browser
 
-    - uses: actions/setup-node@v3
+    - uses: actions/setup-node@v4
       with:
         node-version: '12.x'
     - name: "Install yarn"
